@@ -1,0 +1,48 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+body{
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+header{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(0deg, rgb(80, 34, 195) 0%, rgb(13, 12, 8) 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+section{
+    margin-top: 50px;
+    font-size: 30px;
+    
+}
+
+section label, input{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+input{
+    padding: auto;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 36rem;
+}
+
+button{
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-size: 20px;    
+}
+
+section p{
+    font-size: 20px;
+}
+
