@@ -7,7 +7,7 @@ function cinema(){
     const minutos = duracao - horas * 60;
 
     document.getElementById("tituloSaida").textContent = titulo.toUpperCase();
-    document.getElementById("duracaoSaida").textContent = horas + "Hotas(s) e " + minutos + "Minutos(s)"
+    document.getElementById("duracaoSaida").textContent = horas + "Horas(s) e " + minutos + "Minutos(s)"
 
 }
 
