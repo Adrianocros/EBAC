@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    background-color: #f0f8ff	;
+    font-family: "Ubuntu", sans-serif;
+   
+}
+
+main{
+    border: 1px solid #f0f8ff	;
+    border-radius: 20px;
+    padding: 85px;
+    width: 50rem;
+    height: 60rem;
+    text-align: center;
+}
+
+main h1{
+    font-size: 60px;
+    color: #0094ff	;
+    margin-bottom: 60px;
+}
+
+main form{
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-color: #0094ff	;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-color: #0094ff	;
+    background-color: #f0f8ff		;
+    font-size:20px;
+} 
+
+select{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: blue;
+    background-color: #f0f8ff		;
+    margin-bottom: 20px;    
+    font-size: 15px;
+    color: #535252	;;
+}
+
+select option{
+    font-size: 15px;
+    color: #0094ff;
+}
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #0094ff;
+    background-color: #0094ff	;
+    color: #f0f8ff;
+    margin-bottom: 20px;    
+    font-size: 20px;    
+}
+
+p{
+    border: 1px solid #0094ff;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #f0f8ff		;
+}
+
+#Total {
+    background-color: #63b3ed; /* cor de fundo */
+    color: white;              /* cor do texto */
+    padding: 10px;             /* espaço interno */
+    border-radius: 5px;        /* cantos arredondados */
+    font-weight: bold;         /* texto em negrito */
+    font-size: 18px;           /* tamanho da fonte */
+    text-align: center;        /* centralizar o texto */
+}
