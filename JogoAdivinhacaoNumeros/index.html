@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <main>
+        <h2>Jogo de Adivinhação</h2>
+        <h1>O jogo irá gerar um número aleatório entre 1 e 100, e o jogador terá que adivinhar qual é esse número.
+            O jogo dará dicas ao jogador, dizendo se o número chutado é maior ou menor que o número secreto. 
+            O jogo termina quando o jogador acertar o número ou quando ele atingir um número máximo de tentativas.</h1>
+        
+        <input type="number" id="numero"  placeholder="Digite um nº de 0 a 100">
+        <button  id="btnChutar" type="button">Chutar</button>
+    
+        
+            <p id="mensagem"></p>
+            <p id="tentativas"></p>
+   
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
