@@ -14,50 +14,42 @@ class DepositoParquimetro{
 
 }
 
-class Parquimetro {
-    constructor() {
-        this.vlrDep = vlrDep;
-    }
+const Parquimetro = {
+    depositar: function () {
+        let valor = parseFloat(document.getElementById("valorEstacionado").value.replace(",", "."));
+        let tempo = 0;
+        let valorUsado = 0;
 
-    depositar() {
-        const valorEstacionado = parseFloat(document.getElementById("valorEstacionado").value);
-       
-        const limite = 3.00;
-        const depositoAtual = this.vlrDep.deposito;
-        let troco = 0;
-
-        if (depositoAtual > limite) {
-            troco = valorEstacionado;
-        } else if (depositoAtual + valorEstacionado > limite) {
-            const permitido = limite - depositoAtual;
-            this.vlrDep.depositar(permitido);
-            troco = valorEstacionado - permitido;
+        if (valor >= 3.00) {
+            tempo = 120;
+            valorUsado = 3.00;
+        } else if (valor >= 1.75) {
+            tempo = 60;
+            valorUsado = 1.75;
+        } else if (valor >= 1.00) {
+            tempo = 30;
+            valorUsado = 1.00;
         } else {
-            this.vlrDep.depositar(valorEstacionado);
+            tempo = 0;
+            valorUsado = 0.00;
         }
 
-        this.mostarEstacionamento(this.vlrDep.deposito, troco);
-    }
 
-    mostarEstacionamento(deposito, troco = 0) {
-        document.getElementById("deposito").textContent = `Valor depósito: R$ ${deposito.toFixed(2)}`;
+        let troco = (valor - valorUsado).toFixed(2);
 
-        let tempo = "";
 
-        if (deposito >= 3.00) {
-            tempo = "120 minutos (Tempo máximo permitido)";
-        } else if (deposito >= 1.75) {
-            tempo = "60 minutos";
-        } else if (deposito >= 1.00) {
-            tempo = "30 minutos";
-        } else {
-            tempo = "00:00 minutos";
-        }
+        let textoTempo = tempo === 0
+            ? "Tempo de estacionamento: Valor insuficiente"
+            : tempo === 120
+                ? "Tempo de estacionamento: 120 minutos (Tempo máximo permitido)"
+                : `Tempo de estacionamento: ${tempo} minutos`;
 
-        document.getElementById("tempo").textContent = `Tempo de estacionamento: ${tempo}`;
-        document.getElementById("troco").textContent = `Troco R$ ${troco.toFixed(2)}`;
+        document.getElementById("tempo").innerText = textoTempo;
+        document.getElementById("deposito").innerText = `Valor depósito: R$ ${valorUsado.toFixed(2).replace(".", ",")}`;
+        document.getElementById("troco").innerText = `Troco R$ ${troco.replace(".", ",")}`;
     }
 }
+
 
 const vlrDep = new DepositoParquimetro();
 const parquimetro = new Parquimetro(vlrDep);

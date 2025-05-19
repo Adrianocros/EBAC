@@ -1,75 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #3C4ADE;
-    color: #FFFFFF;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-}
-
-h1{
-    font-size: 50px;
-    padding: 20px;
-}
-p{
-    padding: 10px;
-    font-size: 20px;
-}
-
-table{
-    font-size: 20px;
+body {
+    background-color: #3739d6;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
     text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-table th{
-    width: 270px;
-    height: 20px;
+table {
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: #4446e0;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-table td{
-    font-size: 15px;
+th, td {
+    padding: 12px 20px;
+    border: 1px solid white;
+    font-size: 1.1em;
 }
 
-input{
-    width: 270px;
-    height: 30px;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    
-}
-
-button{
-    border: none;
-    width: 90px;
-    height: 30px;
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.2em;
     border-radius: 10px;
-    background-color: #3EB2E0;
-    color: #FFFFFF;
-}
-button:hover{
-    background-color: #3C7DDE;
-}
-
-h2{
-    margin: 20px 0 20px 0;
-    font-size: 40px;
+    border: none;
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
 }
 
-h3{
-    margin: 20px 0 20px 0;
-    font-size: 30px;
+button {
+    background-color: #4ec4dd;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
 }
+
+button:hover {
+    background-color: #38a0b3;
+}
+
+h2, h3 {
+    transition: all 0.3s ease;
+}
+
+#tempo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff176;
+    margin-top: 30px;
+}
+
+#deposito {
+    font-size: 1.3em;
+    color: #81f2c1;
+}
+
+#troco {
+    font-size: 1.3em;
+    color: #ffcccb;
+}
+
