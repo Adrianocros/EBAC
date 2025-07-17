@@ -10,8 +10,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: normal;
-    height: 155vh;
+    height: 120vh;
 }
+
+
 
 main{
     background-color: #ffffff;
@@ -53,7 +55,8 @@ input:focus{
 }
 
 button{
-    background-color:#007bff;
+     background-color:  #79b84f;
+    
     color: #ffffff;
     border: none;
     padding: 10px;
@@ -62,8 +65,24 @@ button{
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-
 button:hover{
-    background-color:  #0056b3;
+  background-color:#224d05;   
 }
+#restaurarDados{
+    margin-top: 10px;
+    background-color:#007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+#restaurarDados:hover{
+    background-color:  #0056b3;
+    
+    
+}
+
