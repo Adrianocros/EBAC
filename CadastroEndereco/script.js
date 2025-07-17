@@ -7,7 +7,7 @@ document.getElementById('cep').addEventListener("blur",(evento)=>{
         return;
     //3 se estiver valido o cep trazer os dados
     //3.1 Promessa de que o fetch ira buscar o recurso
-    fetch(`https://opencep.com/v1/${cepInformado}`)
+    fetch(`https://viacep.com.br/ws/${cepInformado}/json`)
         .then(response => response.json())
         .then(data =>{
             //3.2 processamento da pagina
